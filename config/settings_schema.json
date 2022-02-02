@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Dawn",
-    "theme_version": "3.0.0",
-    "theme_author": "Shopify",
+    "theme_name": "AsBridges",
+    "theme_version": "1.0.0",
+    "theme_author": "Argzon Haziraj",
     "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_support_url": "https://support.creatick.io/"
   },
   {
     "name": "t:settings_schema.colors.name",
