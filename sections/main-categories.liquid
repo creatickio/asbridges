@@ -1,0 +1,106 @@
+{{ 'component-mainCategories.css' | asset_url | stylesheet_tag }}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="item">
+                <a href="{{ section.settings.first_url }}">
+                    <img loading="lazy" src="{{ section.settings.first_image | image_url }}" height="400" width="300" alt="{{ section.settings.first_title }}">
+                    <div class="intoBox">
+                        <span class="title">{{ section.settings.first_title }}</span>
+                        <span class="shopNow">
+                            <a href="{{ section.settings.first_url }}">
+                                Shop now
+                            </a>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="item">
+                <a href="{{ section.settings.second_url }}">
+                    <img loading="lazy" src="{{ section.settings.second_image | image_url }}" height="400" width="300" alt="{{ section.settings.second_title }}">
+                    <div class="intoBox">
+                        <span class="title">{{ section.settings.second_title }}</span>
+                        <span class="shopNow">
+                            <a href="{{ section.settings.second_url }}">
+                                Shop now
+                            </a>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="item">
+                <a href="{{ section.settings.third_url }}">
+                    <img loading="lazy" src="{{ section.settings.third_image | image_url }}" height="400" width="300" alt="{{ section.settings.third_title }}">
+                    <div class="intoBox">
+                        <span class="title">{{ section.settings.third_title }}</span>
+                        <span class="shopNow">
+                            <a href="{{ section.settings.third_url }}">
+                                Shop now
+                            </a>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Main Categories",
+  "tag": "section",
+  "class": "mainCategories",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "First Image",
+      "id": "first_image"
+    },
+    {
+      "type": "text",
+      "label": "First Title",
+      "id": "first_title"
+    },
+    {
+      "type": "url",
+      "label": "First Url",
+      "id": "first_url"
+    },
+    {
+      "type": "image_picker",
+      "label": "Second Image",
+      "id": "second_image"
+    },
+    {
+      "type": "text",
+      "label": "Second Title",
+      "id": "second_title"
+    },
+    {
+      "type": "url",
+      "label": "Second Url",
+      "id": "second_url"
+    },
+    {
+      "type": "image_picker",
+      "label": "Third Image",
+      "id": "third_image"
+    },
+    {
+      "type": "text",
+      "label": "Third Title",
+      "id": "third_title"
+    },
+    {
+      "type": "url",
+      "label": "Third Url",
+      "id": "third_url"
+    }
+  ]
+}
+{% endschema %}

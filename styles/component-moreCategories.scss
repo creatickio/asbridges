@@ -1,5 +1,9 @@
 @import "./colors.scss";
 
+.moreCategories {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -8,8 +12,6 @@
   grid-row-gap: 20px;
   justify-items: stretch;
   align-items: stretch;
-  margin-top: 50px;
-  margin-bottom: 50px;
   .item {
     position: relative;
     &__image {

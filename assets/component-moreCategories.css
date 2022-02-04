@@ -1,3 +1,8 @@
+.moreCategories {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -8,8 +13,6 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 .wrapper .item {
   position: relative;

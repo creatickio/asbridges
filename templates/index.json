@@ -66,10 +66,14 @@
         "fifth_title": "Decken & Kissen",
         "fifth_link": "shopify:\/\/collections\/decken-kissen"
       }
+    },
+    "main-categories": {
+      "type": "main-categories"
     }
   },
   "order": [
     "image_banner",
+    "main-categories",
     "more-categories"
   ]
 }
