@@ -1,0 +1,139 @@
+{{ 'component-moreCategories.css' | asset_url | stylesheet_tag }}
+<div class="container">
+  <div class="wrapper">
+    <div class="item">
+      <a href="{{ section.settings.first_link }}">
+      <div class="item__image">
+        <img loading="lazy" src="{{ section.settings.first_image | image_url }}" height="430" width="100">
+      </div>
+      <span class="title">{{ section.settings.first_title }}</span>
+    </a>
+    </div>
+    
+    <div class="item">
+      <a href="{{ section.settings.second_link }}">
+      <div class="item__image">
+        <img loading="lazy" src="{{ section.settings.second_image | image_url }}" height="430" width="100">
+      </div>
+      <span class="title">{{ section.settings.second_title }}</span>
+    </a>
+    </div>
+    
+    <div class="item">
+      <a href="{{ section.settings.third_link }}">
+      <div class="item__image">
+        <img loading="lazy" src="{{ section.settings.third_image | image_url }}" height="430" width="100">
+      </div>
+      <span class="title">{{ section.settings.third_title }}</span>
+    </a>
+    </div>
+    
+    <div class="item">
+      <a href="{{ section.settings.fourth_link }}">
+      <div class="item__image">
+        <img loading="lazy" src="{{ section.settings.fourth_image | image_url }}" height="430" width="100">
+      </div>
+      <span class="title">{{ section.settings.fourth_title }}</span>
+    </a>
+    </div>
+    
+    <div class="item">
+      <a href="{{ section.settings.fifth_link }}">
+      <div class="item__image">
+        <img loading="lazy" src="{{ section.settings.fifth_image | image_url }}" height="430" width="100">
+      </div>
+      <span class="title">{{ section.settings.fifth_title }}</span>
+    </a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "More Categories",
+  "tag": "section",
+  "class": "moreCategories",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "first_image",
+      "label": "First Image"
+    },
+    {
+      "type": "text",
+      "id": "first_title",
+      "label": "First Title",
+      "default": "First Title here"
+    },
+    {
+      "type": "collection",
+      "id": "first_link",
+      "label": "First Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "second_image",
+      "label": "Second Image"
+    },
+    {
+      "type": "text",
+      "id": "second_title",
+      "label": "Second Title",
+      "default": "Second Title here"
+    },
+    {
+      "type": "url",
+      "id": "second_link",
+      "label": "Second Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "third_image",
+      "label": "Third Image"
+    },
+    {
+      "type": "text",
+      "id": "third_title",
+      "label": "Third Title",
+      "default": "Third Title here"
+    },
+    {
+      "type": "url",
+      "id": "third_link",
+      "label": "Third Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "fourth_image",
+      "label": "Fourth Image"
+    },
+    {
+      "type": "text",
+      "id": "fourth_title",
+      "label": "Fourth Title",
+      "default": "Fourth Title here"
+    },
+    {
+      "type": "url",
+      "id": "fourth_link",
+      "label": "Fourth Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "fifth_image",
+      "label": "Fifth Image"
+    },
+    {
+      "type": "text",
+      "id": "fifth_title",
+      "label": "Fifth Title",
+      "default": "Fifth Title here"
+    },
+    {
+      "type": "url",
+      "id": "fifth_link",
+      "label": "Fifth Link"
+    }
+  ]
+}
+{% endschema %}

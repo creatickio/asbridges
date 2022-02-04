@@ -136,6 +136,12 @@
         "background_style": "none",
         "button_label": ""
       }
+    },
+    "more-categories": {
+      "type": "more-categories",
+      "settings": {
+        "title": "More categories"
+      }
     }
   },
   "order": [
@@ -144,6 +150,7 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "more-categories"
   ]
 }
