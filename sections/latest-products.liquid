@@ -1,0 +1,52 @@
+{{ 'component-latestProducts.css' | asset_url | stylesheet_tag }}
+
+<div class="container">
+    <div class="row">
+        <h3 class="sectionHeader">{{ section.settings.section_header }}</h3>
+        <ul class="row" id="productsList">
+            {% assign products = collections.all.products | sort: 'published_at' | reverse %}
+        
+            {% for product in products limit: 8 %}
+                <div class="col-lg-3 col-md-6">
+                    <li class="item">
+                        <a href="{{ product.url }}">
+                            <img class="img-fluid" loading="lazy" height="330" width="600" src="{{ product.featured_image | image_url }}" alt="{{ product.title }}">
+                        </a>
+                        <div class="quicklinks">
+                            <span class="wishlist">
+                                {% render 'icon-heart' %}
+                            </span>
+                            <span class="seperator"></span>
+                            <span class="quickview">
+                                {% render 'icon-eye' %}
+                            </span>
+                        </div>
+                        <a class="productTitle" href="{{ product.url }}">{{ product.title }}</a>
+                        <p class="price">{{ product.price | money }}</p>
+                        <div class="addToCartBTN">
+                            <a href="{{ product.url }}">
+                                Add to cart
+                            </a>
+                        </div>
+                    </li>
+                </div>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Latest Products",
+  "tag": "section",
+  "class": "latestProducts",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section header",
+      "id": "section_header",
+      "default": "Latest Products"
+    }
+  ]
+}
+{% endschema %}

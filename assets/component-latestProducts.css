@@ -1,0 +1,106 @@
+.latestProducts {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.latestProducts .sectionHeader {
+  font-weight: 400;
+  font-size: 28px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.latestProducts #productsList {
+  list-style: none;
+}
+.latestProducts #productsList .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+  position: relative;
+}
+.latestProducts #productsList .item .quicklinks {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+  position: absolute;
+  width: 100%;
+  top: 282px;
+  -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.latestProducts #productsList .item .quicklinks .seperator {
+  height: 14px;
+  width: 1px;
+  background: #e97e3d;
+  display: inline-block;
+}
+.latestProducts #productsList .item .productTitle {
+  color: #222;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.latestProducts #productsList .item .price {
+  color: #e97e3d;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.latestProducts #productsList .item .addToCartBTN {
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.latestProducts #productsList .item .addToCartBTN a {
+  color: #e97e3d;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.latestProducts #productsList .item:hover .addToCartBTN {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.latestProducts #productsList .item:hover .quicklinks {
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
