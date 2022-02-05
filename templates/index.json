@@ -49,6 +49,12 @@
         "third_url": "shopify:\/\/collections\/teppiche-laufer"
       }
     },
+    "latest-products": {
+      "type": "latest-products",
+      "settings": {
+        "section_header": "Our latest products"
+      }
+    },
     "more-categories": {
       "type": "more-categories",
       "settings": {
@@ -68,9 +74,6 @@
         "fifth_title": "Decken & Kissen",
         "fifth_link": "shopify:\/\/collections\/decken-kissen"
       }
-    },
-    "latest-products": {
-      "type": "latest-products"
     }
   },
   "order": [
