@@ -1,0 +1,57 @@
+.subBar {
+  background: #222;
+  padding: 33px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subBar .content p {
+  color: #fff;
+}
+.subBar .content p::-moz-selection {
+  background: #fff;
+  color: #222;
+}
+.subBar .content p::selection {
+  background: #fff;
+  color: #222;
+}
+.subBar .content h2 {
+  color: #fff;
+}
+.subBar .content h2::-moz-selection {
+  background: #fff;
+  color: #222;
+}
+.subBar .content h2::selection {
+  background: #fff;
+  color: #222;
+}
+.subBar .footer-block--newsletter {
+  margin-top: 0;
+}
+.subBar .field {
+  width: 400px;
+}
+.subBar .field__input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.subBar .field__label {
+  color: #fff;
+}
+.subBar .field .newsletter-form__button {
+  width: 13rem;
+  background: #fff;
+}
+.subBar .field button[type=submit] {
+  background: #fff;
+  font-weight: 700;
+  color: #222;
+}

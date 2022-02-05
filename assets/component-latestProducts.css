@@ -60,11 +60,34 @@
   margin-top: 24px;
   margin-bottom: 12px;
 }
-.latestProducts #productsList .item .price {
+.latestProducts #productsList .item .priceGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.latestProducts #productsList .item .priceGroup .price {
   color: #e97e3d;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+.latestProducts #productsList .item .priceGroup .compareAt {
+  margin: 0;
+  margin-left: 15px;
+  position: relative;
+}
+.latestProducts #productsList .item .priceGroup .compareAt:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: #222;
+  position: absolute;
+  left: 0;
+  top: 50%;
 }
 .latestProducts #productsList .item .addToCartBTN {
   background: #fff;

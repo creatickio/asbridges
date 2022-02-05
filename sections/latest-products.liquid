@@ -22,7 +22,12 @@
                             </span>
                         </div>
                         <a class="productTitle" href="{{ product.url }}">{{ product.title }}</a>
-                        <p class="price">{{ product.price | money }}</p>
+                        <div class="priceGroup">
+                            <p class="price">{{ product.price | money }}</p>
+                            {% if product.compare_at_price > product.price %}
+                                <p class="compareAt">{{ product.compare_at_price | money }}</p>
+                            {% endif %}
+                        </div>
                         <div class="addToCartBTN">
                             <a href="{{ product.url }}">
                                 Add to cart

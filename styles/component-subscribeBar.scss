@@ -1,0 +1,48 @@
+@import "./colors.scss";
+.subBar {
+  background: $black;
+  padding: 33px 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .content {
+    p {
+      color: #fff;
+      &::selection {
+        background: #fff;
+        color: $black;
+      }
+    }
+    h2 {
+      color: #fff;
+      &::selection {
+        background: #fff;
+        color: $black;
+      }
+    }
+  }
+  .footer-block--newsletter {
+    margin-top: 0;
+  }
+  .field {
+    width: 400px;
+    &__input {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+    &__label {
+      color: #fff;
+    }
+    .newsletter-form__button {
+      width: 13rem;
+      background: #fff;
+    }
+    button[type="submit"] {
+      background: #fff;
+      font-weight: 700;
+      color: $black;
+    }
+  }
+}
