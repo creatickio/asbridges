@@ -55,6 +55,26 @@
   font-weight: 700;
   color: #222;
 }
+@media screen and (max-width: 992px) {
+  .subBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subBar .content {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .subBar {
+    padding: 30px;
+  }
+  .subBar .field {
+    width: 300px;
+    overflow: hidden;
+  }
+}
 
 h3#ContactFooter-success,
 h3#ContactFooter-error {

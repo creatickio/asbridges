@@ -7,8 +7,8 @@
        
     <div class="subBar">
         <div class="content">
-            <h2>Get in touch</h2>
-            <p>Subscribe for our latest products and offers</p>
+            <h2>{{ section.settings.title }}</h2>
+            {{ section.settings.description }}
         </div>
         <div class="footer-block--newsletter">
             {%- if section.settings.newsletter_enable -%}
@@ -68,6 +68,18 @@
       "id": "newsletter_enable",
       "default": true,
       "label": "Enable Subscribe"
+    },
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title",
+      "default": "Get in touch"
+    },
+    {
+      "type": "richtext",
+      "label": "Description",
+      "id": "description",
+      "default": "<p>Subscribe for our latest products and offers</p>"
     }
   ]
 }

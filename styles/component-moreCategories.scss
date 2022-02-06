@@ -19,6 +19,11 @@
       &:nth-child(1) {
         height: 300px !important;
       }
+      .title {
+        bottom: 28px !important;
+        left: 18px !important;
+        top: auto !important;
+      }
     }
   }
   .item {

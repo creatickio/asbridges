@@ -45,6 +45,19 @@
       color: $black;
     }
   }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    .content {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    padding: 30px;
+    .field {
+      width: 300px;
+      overflow: hidden;
+    }
+  }
 }
 
 h3#ContactFooter-success,

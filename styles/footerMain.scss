@@ -8,6 +8,7 @@
     list-style: none;
     display: flex;
     gap: 20px;
+    justify-content: flex-start;
     li {
       a {
         font-weight: 400;
@@ -15,6 +16,27 @@
         color: $black;
         text-decoration: none;
       }
+    }
+    @media screen and (max-width: 1999px) {
+      flex-direction: row;
+      padding: 0;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .copyright {
+      order: 3;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .paymentLogos {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 496px) {
+    .footerMenu {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 }

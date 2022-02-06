@@ -10,10 +10,47 @@
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .footerMain .footerMenu li a {
   font-weight: 400;
   font-size: 16px;
   color: #222;
   text-decoration: none;
+}
+@media screen and (max-width: 1999px) {
+  .footerMain .footerMenu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footerMain .copyright {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footerMain .paymentLogos {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 496px) {
+  .footerMain .footerMenu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }

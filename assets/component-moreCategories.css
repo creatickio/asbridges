@@ -22,6 +22,11 @@
   .wrapper .item:nth-child(1) {
     height: 300px !important;
   }
+  .wrapper .item .title {
+    bottom: 28px !important;
+    left: 18px !important;
+    top: auto !important;
+  }
 }
 .wrapper .item {
   position: relative;
