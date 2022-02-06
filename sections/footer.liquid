@@ -2,8 +2,10 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-4">© Copyright 2022 | AsBridges By <a class="company" href="https://creatick.io" target="_blank">Creatick</a></div>
-    <div class="col-lg-6">
+    <div class="col-lg-4 copyright">
+      <p>© Copyright 2022 | AsBridges By <a class="company" href="https://creatick.io" target="_blank">Creatick</a></p>
+    </div>
+    <div class="col-lg-5">
       <ul class="footerMenu">
         {% for link in linklists.footer.links %}
           <li class="menu-link">
@@ -12,7 +14,9 @@
         {% endfor %}
       </ul>
   </div>
-    <div class="col-lg-2">Payments image</div>
+    <div class="col-lg-3 paymentLogos">
+      <img loading="lazy" height="22" width="300" src="{{ section.settings.payment_logos | image_url }}" alt="Payment Logos">
+    </div>
   </div>
 </div>
 
