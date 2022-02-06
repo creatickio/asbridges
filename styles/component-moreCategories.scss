@@ -15,6 +15,11 @@
   @media screen and (max-width: 988px) {
     grid-template-columns: 1fr;
     grid-template-columns: 1fr;
+    .item {
+      &:nth-child(1) {
+        height: 300px !important;
+      }
+    }
   }
   .item {
     position: relative;
