@@ -76,7 +76,11 @@
       }
     },
     "subscribe-bar": {
-      "type": "subscribe-bar"
+      "type": "subscribe-bar",
+      "settings": {
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails"
+      }
     }
   },
   "order": [
