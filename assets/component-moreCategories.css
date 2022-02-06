@@ -14,11 +14,18 @@
       -ms-flex-align: stretch;
           align-items: stretch;
 }
+@media screen and (max-width: 988px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 .wrapper .item {
   position: relative;
 }
 .wrapper .item__image {
   width: 100%;
+  height: 100%;
 }
 .wrapper .item__image img {
   width: 100%;
@@ -39,7 +46,7 @@
 }
 .wrapper .item:nth-child(1) {
   grid-row: 1/3;
-  height: 640px;
+  height: 620px;
 }
 .wrapper .item:nth-child(1) .title {
   top: 28px;
