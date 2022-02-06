@@ -55,3 +55,8 @@
   font-weight: 700;
   color: #222;
 }
+
+h3#ContactFooter-success,
+h3#ContactFooter-error {
+  color: #fff !important;
+}
