@@ -1,3 +1,19 @@
 .footerMain {
   margin: 32px 0;
 }
+.footerMain .company {
+  color: #e97e3d;
+}
+.footerMain .footerMenu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.footerMain .footerMenu li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222;
+  text-decoration: none;
+}
