@@ -1,17 +1,60 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1645020198d49c0736": {
+      "type": "rich-text",
+      "blocks": {
+        "1645020198f0393106-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stay in touch! Contact us",
+            "heading_size": "h1"
+          }
+        },
+        "1645020198f0393106-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Donec sed odio dui. Fusce dapibus, tellus ac cursuscommodo, tortor mauris condimentum nibh, ut fermentum massa justo.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1645020198f0393106-0",
+        "1645020198f0393106-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
     },
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": ""
+        "heading": "",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "16450201717b1bb844": {
+      "type": "subscribe-bar",
+      "settings": {
+        "newsletter_enable": true,
+        "title": "Get in touch",
+        "description": "<p>Subscribe for our latest products and offers<\/p>"
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "1645020198d49c0736",
+    "form",
+    "16450201717b1bb844"
   ]
 }
