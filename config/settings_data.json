@@ -3,6 +3,9 @@
     "type_header_font": "nunito_n4",
     "type_body_font": "nunito_n4",
     "page_width": 1400,
+    "card_style": "card",
+    "card_color_scheme": "background-1",
+    "media_shadow_vertical_offset": -4,
     "currency_code_enabled": true,
     "sections": {
       "announcement-bar": {
