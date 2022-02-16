@@ -1,0 +1,22 @@
+@import "./colors.scss";
+
+.page {
+  .pageTitle {
+    text-align: center;
+    background: $black;
+    padding: 60px 0;
+    height: 174px;
+    h2 {
+      color: $light;
+      font-weight: 600;
+      font-size: 38px;
+      &::selection {
+        background: $light;
+        color: $black;
+      }
+    }
+  }
+  .pageContent {
+    margin: 100px 0;
+  }
+}

@@ -20,6 +20,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width page-width--narrow section-{{ section.id }}-padding">
+    <h3>test</h3>
     <h2 class="page-title">
       {%- if section.settings.page.title != blank -%}
         {{ section.settings.page.title | escape }}
@@ -31,6 +32,7 @@
       {%- if section.settings.page.content != blank -%}
         {{ section.settings.page.content }}
       {%- else -%}
+      asdasd
         <div class='page-placeholder-wrapper placeholder'>
           {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
         </div>

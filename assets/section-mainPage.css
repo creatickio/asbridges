@@ -1,0 +1,22 @@
+.page .pageTitle {
+  text-align: center;
+  background: #222;
+  padding: 60px 0;
+  height: 174px;
+}
+.page .pageTitle h2 {
+  color: #fcfcfc;
+  font-weight: 600;
+  font-size: 38px;
+}
+.page .pageTitle h2::-moz-selection {
+  background: #fcfcfc;
+  color: #222;
+}
+.page .pageTitle h2::selection {
+  background: #fcfcfc;
+  color: #222;
+}
+.page .pageContent {
+  margin: 100px 0;
+}
