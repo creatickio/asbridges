@@ -3,12 +3,19 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+      }
+    },
+    "1645020159537cfe64": {
+      "type": "subscribe-bar",
+      "settings": {
+        "newsletter_enable": true,
+        "title": "Get in touch",
+        "description": "<p>Subscribe for our latest products and offers<\/p>"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1645020159537cfe64"
   ]
 }
