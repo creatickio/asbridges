@@ -33,7 +33,7 @@
           "menu": "main-menu",
           "show_line_separator": false,
           "enable_sticky_header": true,
-          "margin_bottom": 0
+          "margin_bottom": 20
         }
       },
       "footer": {
