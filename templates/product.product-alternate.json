@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "product-alternate",
       "blocks": {
         "vendor": {
           "type": "text",
@@ -117,32 +117,9 @@
         "padding_top": 100,
         "padding_bottom": 100
       }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "You may also like",
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
-    "1645024037e036b54e": {
-      "type": "subscribe-bar",
-      "settings": {
-        "newsletter_enable": true,
-        "title": "Get in touch",
-        "description": "<p>Subscribe for our latest products and offers<\/p>"
-      }
     }
   },
   "order": [
-    "main",
-    "product-recommendations",
-    "1645024037e036b54e"
+    "main"
   ]
 }
