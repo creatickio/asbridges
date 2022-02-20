@@ -1,0 +1,73 @@
+.productAlternate .pageTitle {
+  text-align: center;
+  background: #222;
+  padding: 60px 0;
+  height: 174px;
+}
+.productAlternate .pageTitle h2 {
+  color: #fcfcfc;
+  font-weight: 600;
+  font-size: 38px;
+}
+.productAlternate .pageTitle h2::-moz-selection {
+  background: #fcfcfc;
+  color: #222;
+}
+.productAlternate .pageTitle h2::selection {
+  background: #fcfcfc;
+  color: #222;
+}
+.productAlternate .productShippment {
+  background: #fcfcfc;
+  text-align: center;
+  color: #222;
+}
+.productAlternate .productAdditional .headerProdcuts::before, .productAlternate .productAdditional .headerProdcuts::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #efefef;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.productAlternate .productAdditional .headerProdcuts .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+}
+.productAlternate .productAdditional .headerProdcuts .tabs h4 {
+  margin: 0;
+  color: #222;
+  font-size: 21.3px;
+  font-weight: bold;
+  position: relative;
+}
+.productAlternate .productAdditional .headerProdcuts .tabs .active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #e97e3d;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  position: absolute;
+}
+.productAlternate .productAdditional .tabsContent .description {
+  display: none;
+}
+.productAlternate .productAdditional .tabsContent .additionalInformation {
+  display: none;
+}
+.productAlternate .productAdditional .tabsContent .review {
+  display: none;
+}
+.productAlternate .productAdditional .tabsContent .activeTab {
+  display: block;
+}
+.productAlternate .productAdditional .tabsContent .noneActive {
+  display: none;
+}

@@ -1,8 +1,107 @@
-<h1>Hi</h1>
+{{ 'section-productAlternate.css' | asset_url | stylesheet_tag }}
+
+<div class="pageTitle">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ product.title | escape }}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="productShippment">
+  <p>{{ section.settings.shipment }}</p>
+</div>
+
+
+<div class="productAdditional">
+  <div class="headerProdcuts">
+    <div class="container">
+      <div class="tabs">
+        <h4 class="active" id="description">Description</h4>
+        <h4 id="additionalInformation">Additional Information</h4>
+        <h4 id="review">Review</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabsContent">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="description activeTab">
+            <p>{{ product.description }}</p>
+          </div>
+          <div class="additionalInformation">
+            <p>This is more from product information</p>
+          </div>
+          <div class="review">
+            <p>This is the review tab active</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
 
 {% schema %}
 {
-  "name": "Section name",
-  "settings": []
+  "name": "Product",
+  "class": "productAlternate",
+  "settings": [
+    {
+      "id": "shipment",
+      "label": "Shipment",
+      "type": "text",
+      "default": "UPS"
+    }
+  ]
 }
 {% endschema %}
+
+{% javascript %}
+
+// Id selection
+const description = document.getElementById('description');
+const additionalInformation = document.getElementById('additionalInformation');
+const review = document.getElementById('review');
+
+// Class selection
+const descriptionTab = document.getElementsByClassName('description');
+const additionalInformationTab = document.getElementsByClassName('additionalInformation');
+const reviewTab = document.getElementsByClassName('review');
+
+console.log(descriptionTab);
+
+description.addEventListener("click", () => {
+  description.classList.add('active');
+  additionalInformation.classList.remove('active');
+  review.classList.remove('active');
+
+  descriptionTab[0].classList.add('activeTab');
+  additionalInformationTab[0].classList.remove('activeTab');
+  reviewTab[0].classList.remove('activeTab');
+});
+
+additionalInformation.addEventListener("click", () => {
+  description.classList.remove('active');
+  additionalInformation.classList.add('active');
+  review.classList.remove('active');
+
+  descriptionTab[0].classList.remove('activeTab');
+  additionalInformationTab[0].classList.add('activeTab');
+  reviewTab[0].classList.remove('activeTab');
+});
+
+review.addEventListener("click", () => {
+  description.classList.remove('active');
+  additionalInformation.classList.remove('active');
+  review.classList.add('active');
+
+  descriptionTab[0].classList.remove('activeTab');
+  additionalInformationTab[0].classList.remove('activeTab');
+  reviewTab[0].classList.add('activeTab');
+});
+
+{% endjavascript %}
