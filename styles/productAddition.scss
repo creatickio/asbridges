@@ -1,0 +1,75 @@
+@import "./colors.scss";
+.price-item {
+  color: $primary !important;
+  .price-item--regular {
+    font-size: 37.9px !important;
+    font-weight: 600;
+  }
+}
+.price--large {
+  font-size: 37.9px !important;
+  font-weight: 600;
+}
+
+.form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.product-form__input input[type="radio"] + label {
+  border-radius: 0;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+}
+
+.product-form__input input[type="radio"]:checked + label {
+  color: $black;
+  background-color: #efefef;
+}
+
+.badge {
+  background: #df3c3c;
+  border: none;
+}
+
+.shopify-payment-button__button {
+  background: $primary;
+  font-size: 21.33px;
+  border: 0;
+  text-transform: uppercase;
+  color: #fff;
+  &::after {
+    display: none;
+  }
+}
+
+.card__heading {
+  font-size: 21.33px;
+  font-weight: 700;
+  a {
+    color: $black;
+  }
+}
+
+.button--secondary {
+  background: $black;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 21.33px;
+}
+
+.product-recommendations__heading {
+  padding-top: 100px;
+  margin-bottom: 50px !important;
+  text-align: center;
+  font-size: 28.43px;
+  font-weight: 400;
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $gray;
+    margin-bottom: 100px;
+  }
+}
