@@ -8,6 +8,8 @@
     "card_color_scheme": "background-1",
     "media_shadow_vertical_offset": -4,
     "currency_code_enabled": true,
+    "checkout_accent_color": "#e97e3d",
+    "checkout_button_color": "#e97e3d",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
