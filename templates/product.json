@@ -52,13 +52,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "111437e8-0843-4f2b-a644-21804daeb573": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text",
-            "page": "return-policy"
-          }
         }
       },
       "block_order": [
@@ -69,8 +62,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "share",
-        "111437e8-0843-4f2b-a644-21804daeb573"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -78,9 +70,9 @@
         "media_size": "small",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "enable_video_looping": true,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "1645472370b363c999": {
