@@ -1,5 +1,12 @@
 {
   "sections": {
+    "1645474091a7a5a715": {
+      "type": "shippmentBar",
+      "settings": {
+        "productTitle": "Product Title",
+        "shipment": "This product will take 5 - 9 days to be shipped!"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -104,6 +111,7 @@
     }
   },
   "order": [
+    "1645474091a7a5a715",
     "main",
     "1645472370b363c999",
     "product-recommendations",
