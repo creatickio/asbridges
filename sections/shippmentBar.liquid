@@ -1,0 +1,66 @@
+{% style %}
+
+.pageTitle {
+  text-align: center;
+  background: #222222;
+  padding: 60px 0;
+  height: 174px;
+}
+.pageTitle h2 {
+    color: #FCFCFC;
+    font-weight: 600;
+    font-size: 38px;
+  }
+.pageTitle h2::selection {
+    background: #FCFCFC;
+    color: #222222;
+  }
+
+.productShippment {
+  background: #FCFCFC;
+  text-align: center;
+  color: #222222;
+}
+
+{% endstyle %}
+
+<div class="pageTitle">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>{{ product.title | escape }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="productShippment">
+    <p>{{ section.settings.shipment }}</p>
+</div>
+
+{% schema %}
+{
+    "name": "Product Header Bar",
+    "class": "productShippment",
+    "presets": [
+      {
+        "name": "Product Shippment Bar",
+        "category": "product"
+      }
+    ],
+    "settings": [
+        {
+            "id": "productTitle",
+            "label": "Product Title",
+            "type": "text",
+            "default": "Product Title"
+        },
+      {
+        "id": "shipment",
+        "label": "Shipment",
+        "type": "text",
+        "default": "This product will take 5 - 9 days to be shipped!"
+      }
+    ]
+  }
+{% endschema %}

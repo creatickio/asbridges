@@ -34,18 +34,6 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<div class="pageTitle">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>{{ product.title | escape }}</h2>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="productShippment">
-  <p>Shippment here</p>
-</div>
 
 <section class="page-width section-{{ section.id }}-padding">
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">

@@ -1,29 +1,3 @@
-.pageTitle {
-  text-align: center;
-  background: #222;
-  padding: 60px 0;
-  height: 174px;
-}
-.pageTitle h2 {
-  color: #fcfcfc;
-  font-weight: 600;
-  font-size: 38px;
-}
-.pageTitle h2::-moz-selection {
-  background: #fcfcfc;
-  color: #222;
-}
-.pageTitle h2::selection {
-  background: #fcfcfc;
-  color: #222;
-}
-
-.productShippment {
-  background: #fcfcfc;
-  text-align: center;
-  color: #222;
-}
-
 .productAlternate .productAdditional .headerProdcuts::before, .productAlternate .productAdditional .headerProdcuts::after {
   content: "";
   display: block;
