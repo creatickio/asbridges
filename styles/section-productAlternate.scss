@@ -124,3 +124,45 @@
     }
   }
 }
+
+.spr-form {
+  input,
+  textarea {
+    padding: 15px 22px;
+    border: 1px solid #a8a8a8;
+    &:focus-visible {
+      outline: none;
+      outline-offset: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+// Review plugin
+.btn-primary {
+  background: $primary;
+  height: 60px;
+  border: none !important;
+  text-transform: uppercase;
+  letter-spacing: 6%;
+  font-size: 21.33px;
+  font-weight: 700;
+  padding: 16px 70px;
+  &:hover {
+    background: $black;
+  }
+}
+
+.spr-review-content-body {
+  font-size: 16px !important;
+}
+
+.spr-summary-actions-newreview {
+  color: #b6b6b6;
+  font-size: 21.33px;
+  font-weight: 700;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+  }
+}

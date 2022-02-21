@@ -113,3 +113,44 @@
 .productAlternate .productAdditional .tabsContent .noneActive {
   display: none;
 }
+
+.spr-form input,
+.spr-form textarea {
+  padding: 15px 22px;
+  border: 1px solid #a8a8a8;
+}
+.spr-form input:focus-visible,
+.spr-form textarea:focus-visible {
+  outline: none;
+  outline-offset: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary {
+  background: #e97e3d;
+  height: 60px;
+  border: none !important;
+  text-transform: uppercase;
+  letter-spacing: 6%;
+  font-size: 21.33px;
+  font-weight: 700;
+  padding: 16px 70px;
+}
+.btn-primary:hover {
+  background: #222;
+}
+
+.spr-review-content-body {
+  font-size: 16px !important;
+}
+
+.spr-summary-actions-newreview {
+  color: #b6b6b6;
+  font-size: 21.33px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.spr-summary-actions-newreview:hover {
+  color: #222;
+}
