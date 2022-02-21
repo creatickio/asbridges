@@ -3,7 +3,7 @@
     "1645474091a7a5a715": {
       "type": "shippmentBar",
       "settings": {
-        "productTitle": "Product Title",
+        "productTitle": "{{ product.title }}",
         "shipment": "This product will take 5 - 9 days to be shipped!"
       }
     },
