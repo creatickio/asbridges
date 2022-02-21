@@ -3,10 +3,20 @@
     "main": {
       "type": "product-alternate",
       "settings": {
+        "shipment": "UPS"
+      }
+    },
+    "16454616773fd241d5": {
+      "type": "subscribe-bar",
+      "settings": {
+        "newsletter_enable": true,
+        "title": "Get in touch",
+        "description": "<p>Subscribe for our latest products and offers<\/p>"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16454616773fd241d5"
   ]
 }
