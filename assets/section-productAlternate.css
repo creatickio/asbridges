@@ -1,27 +1,29 @@
-.productAlternate .pageTitle {
+.pageTitle {
   text-align: center;
   background: #222;
   padding: 60px 0;
   height: 174px;
 }
-.productAlternate .pageTitle h2 {
+.pageTitle h2 {
   color: #fcfcfc;
   font-weight: 600;
   font-size: 38px;
 }
-.productAlternate .pageTitle h2::-moz-selection {
+.pageTitle h2::-moz-selection {
   background: #fcfcfc;
   color: #222;
 }
-.productAlternate .pageTitle h2::selection {
+.pageTitle h2::selection {
   background: #fcfcfc;
   color: #222;
 }
-.productAlternate .productShippment {
+
+.productShippment {
   background: #fcfcfc;
   text-align: center;
   color: #222;
 }
+
 .productAlternate .productAdditional .headerProdcuts::before, .productAlternate .productAdditional .headerProdcuts::after {
   content: "";
   display: block;
@@ -37,7 +39,6 @@
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  cursor: pointer;
 }
 .productAlternate .productAdditional .headerProdcuts .tabs h4 {
   margin: 0;
@@ -45,6 +46,7 @@
   font-size: 21.3px;
   font-weight: bold;
   position: relative;
+  cursor: pointer;
 }
 .productAlternate .productAdditional .headerProdcuts .tabs .active::after {
   content: "";

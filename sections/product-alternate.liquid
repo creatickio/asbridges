@@ -1,6 +1,6 @@
 {{ 'section-productAlternate.css' | asset_url | stylesheet_tag }}
 
-<div class="pageTitle">
+{% comment %} <div class="pageTitle">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -11,6 +11,10 @@
 </div>
 <div class="productShippment">
   <p>{{ section.settings.shipment }}</p>
+</div> {% endcomment %}
+
+<div class="productInformation">
+  
 </div>
 
 
@@ -83,12 +87,18 @@
 {
   "name": "Product",
   "class": "productAlternate",
+  "presets": [
+    {
+      "name": "More Information about product",
+      "category": "product"
+    }
+  ],
   "settings": [
     {
       "id": "shipment",
       "label": "Shipment",
       "type": "text",
-      "default": "UPS"
+      "default": "This product will take 5 - 9 days to be shipped!"
     }
   ]
 }
@@ -106,7 +116,6 @@ const descriptionTab = document.getElementsByClassName('description');
 const additionalInformationTab = document.getElementsByClassName('additionalInformation');
 const reviewTab = document.getElementsByClassName('review');
 
-console.log(descriptionTab);
 
 description.addEventListener("click", () => {
   description.classList.add('active');

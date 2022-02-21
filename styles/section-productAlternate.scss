@@ -1,26 +1,27 @@
 @import "./colors.scss";
 
-.productAlternate {
-  .pageTitle {
-    text-align: center;
-    background: $black;
-    padding: 60px 0;
-    height: 174px;
-    h2 {
-      color: $light;
-      font-weight: 600;
-      font-size: 38px;
-      &::selection {
-        background: $light;
-        color: $black;
-      }
+.pageTitle {
+  text-align: center;
+  background: $black;
+  padding: 60px 0;
+  height: 174px;
+  h2 {
+    color: $light;
+    font-weight: 600;
+    font-size: 38px;
+    &::selection {
+      background: $light;
+      color: $black;
     }
   }
-  .productShippment {
-    background: $light;
-    text-align: center;
-    color: $black;
-  }
+}
+.productShippment {
+  background: $light;
+  text-align: center;
+  color: $black;
+}
+
+.productAlternate {
   .productAdditional {
     .headerProdcuts {
       &::before,
@@ -37,13 +38,13 @@
       .tabs {
         display: flex;
         gap: 30px;
-        cursor: pointer;
         h4 {
           margin: 0;
           color: $black;
           font-size: 21.3px;
           font-weight: bold;
           position: relative;
+          cursor: pointer;
         }
         .active {
           &::after {
