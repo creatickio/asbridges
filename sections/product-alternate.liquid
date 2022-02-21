@@ -29,10 +29,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="description">
+          <div class="description activeTab">
             <p>{{ product.description }}</p>
           </div>
-          <div class="additionalInformation activeTab">
+          <div class="additionalInformation">
             <div class="row">
               <div class="col-lg-4">
                 <span>More Information To You</span>
@@ -70,7 +70,7 @@
             </div>
           </div>
           <div class="review">
-            <p>This is the review tab active</p>
+            <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
           </div>
         </div>
       </div>
