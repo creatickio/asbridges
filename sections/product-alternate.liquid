@@ -29,11 +29,45 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="description activeTab">
+          <div class="description">
             <p>{{ product.description }}</p>
           </div>
-          <div class="additionalInformation">
-            <p>This is more from product information</p>
+          <div class="additionalInformation activeTab">
+            <div class="row">
+              <div class="col-lg-4">
+                <span>More Information To You</span>
+                <h3>Things you need to know</h3>
+                <p>We use industry standard SSL encryption to protect your details. Potentially sensitive information such as your name, address and card details are encoded so they can only be read on the secure server.</p>
+                <ul>
+                  <li>Safe Payments</li>
+                  <li>Accept Credit Cards</li>
+                  <li>Different Payment Method</li>
+                  <li>Price Include VAT</li>
+                  <li>Easy to Order</li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h4>
+                  Express Delivery
+                </h4>
+                <p>
+                  Europe & USA within 2-4 days
+                  Rest of the world within 3-7 days
+                  Selected locations
+                </p>
+
+                <h4>Need More Information</h4>
+                <ul>
+                  <li><a href="#">Orders & Shippment</a></li>
+                  <li><a href="#">Payments & Refunds</a></li>
+                  <li><a href="#">Payments</a></li>
+                  <li><a href="#">Your Orders</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-5">
+                <img class="img-fluid" loading="lazy" src="{{ product.featured_image.src | image_url }}" width="700" height="520">
+              </div>
+            </div>
           </div>
           <div class="review">
             <p>This is the review tab active</p>
