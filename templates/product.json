@@ -57,7 +57,7 @@
           "type": "popup",
           "settings": {
             "text": "Pop-up link text",
-            "page": ""
+            "page": "return-policy"
           }
         }
       },
