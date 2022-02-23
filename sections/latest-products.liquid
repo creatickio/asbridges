@@ -9,17 +9,15 @@
             {% for product in products limit: 8 %}
                 <div class="col-lg-3 col-md-6">
                     <li class="item">
-                        <a href="{{ product.url }}">
-                            <img class="img-fluid" loading="lazy" height="330" width="600" src="{{ product.featured_image | image_url }}" alt="{{ product.title }}">
-                        </a>
-                        <div class="quicklinks">
-                            <span class="wishlist">
-                                {% render 'wishlisthero-collection-product' with product: product %}
-                            </span>
-                            <span class="seperator"></span>
-                            <span class="quickview">
-                                {% render 'icon-eye' %}
-                            </span>
+                        <div class="upper">
+                            <a href="{{ product.url }}">
+                                <img class="img-fluid" loading="lazy" height="330" width="600" src="{{ product.featured_image | image_url }}" alt="{{ product.title }}">
+                            </a>
+                            <div class="wishlistWrapper">
+                                <span class="wishlist">
+                                    {% render 'wishlisthero-collection-product' with product: product %}
+                                </span>
+                            </div>
                         </div>
                         <a class="productTitle" href="{{ product.url }}">{{ product.title }}</a>
                         <div class="priceGroup">
@@ -30,7 +28,7 @@
                         </div>
                         <div class="addToCartBTN">
                             <a href="{{ product.url }}">
-                                Add to cart
+                                View more
                             </a>
                         </div>
                     </li>
