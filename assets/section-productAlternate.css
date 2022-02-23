@@ -14,6 +14,14 @@
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 515px) {
+  .productAlternate .productAdditional .headerProdcuts .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .productAlternate .productAdditional .headerProdcuts .tabs h4 {
   margin: 0;
   color: #222;
