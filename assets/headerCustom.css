@@ -1,0 +1,13 @@
+.wishlist-hero-header-icon {
+  color: #222;
+  text-decoration: none;
+}
+.wishlist-hero-header-icon:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+a:hover {
+  color: #e97e3d !important;
+}
