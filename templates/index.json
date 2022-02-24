@@ -79,8 +79,8 @@
       "type": "subscribe-bar",
       "settings": {
         "newsletter_enable": true,
-        "title": "Get in touch",
-        "description": "<p>Subscribe for our latest products and offers<\/p>"
+        "title": "Kontaktiere uns!",
+        "description": "<p>Abonniere unseren Newsletter um für die neusten Produkte informiert zu werden<\/p>"
       }
     }
   },
