@@ -20,3 +20,24 @@
 .page .pageContent {
   margin: 100px 0;
 }
+@media screen and (max-width: 768px) {
+  .page .pageTitle {
+    height: auto;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page .pageTitle h2 {
+    font-size: 30px;
+  }
+  .page .pageContent {
+    margin: 30px 0;
+  }
+}

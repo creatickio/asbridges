@@ -4,6 +4,11 @@
   text-align: center;
   height: 174px;
 }
+@media screen and (max-width: 767px) {
+  .collection-hero__inner {
+    height: auto;
+  }
+}
 
 .collection-hero--with-image .collection-hero__inner {
   margin-bottom: 0;
