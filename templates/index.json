@@ -52,7 +52,7 @@
     "latest-products": {
       "type": "latest-products",
       "settings": {
-        "section_header": "Our latest products"
+        "section_header": "Unsere neusten Produkte"
       }
     },
     "more-categories": {
@@ -78,7 +78,9 @@
     "subscribe-bar": {
       "type": "subscribe-bar",
       "settings": {
-        "newsletter_enable": true
+        "newsletter_enable": true,
+        "title": "Get in touch",
+        "description": "<p>Subscribe for our latest products and offers<\/p>"
       }
     }
   },
