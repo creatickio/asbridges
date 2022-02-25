@@ -39,10 +39,10 @@
       "type": "main-categories",
       "settings": {
         "first_image": "shopify:\/\/shop_images\/kitchen.jpg",
-        "first_title": "Esszimmer",
+        "first_title": "Test",
         "first_url": "shopify:\/\/collections\/kuche",
         "second_image": "shopify:\/\/shop_images\/livingroom.jpg",
-        "second_title": "Wohnen",
+        "second_title": "Test123",
         "second_url": "shopify:\/\/collections\/wohnen",
         "third_image": "shopify:\/\/shop_images\/carpet_cf77f331-9316-4319-b407-17fbe3a59d9e.jpg",
         "third_title": "Teppiche & Läufer",
