@@ -9,7 +9,7 @@
             "image": "shopify:\/\/shop_images\/slide2.jpg",
             "heading": "Summer Collections",
             "heading_size": "medium",
-            "subheading": "50% sale off for first deal",
+            "subheading": "60% sale off for first deal",
             "button_label": "DISCOVER NOW",
             "link": "shopify:\/\/collections\/neu-im-sortiment",
             "button_style_secondary": true,
@@ -39,7 +39,7 @@
       "type": "main-categories",
       "settings": {
         "first_image": "shopify:\/\/shop_images\/kitchen.jpg",
-        "first_title": "Küche",
+        "first_title": "Esszimmer",
         "first_url": "shopify:\/\/collections\/kuche",
         "second_image": "shopify:\/\/shop_images\/livingroom.jpg",
         "second_title": "Wohnen",
@@ -80,7 +80,7 @@
       "settings": {
         "newsletter_enable": true,
         "title": "Kontaktiere uns!",
-        "description": "<p>Abonniere unseren Newsletter um für die neusten Produkte informiert zu werden<\/p>"
+        "description": "<p>Abonniere unseren Newsletter<\/p>"
       }
     }
   },
